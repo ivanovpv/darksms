@@ -52,3 +52,8 @@ Also Dark SMS supports:
 
 Also available [small teaser on YouTube](https://www.youtube.com/watch?v=tyRfkn0FGXM) which explains how it works.
 
+HOWTOS
+-----
+Some part of Dark SMS, namely heavy crypto calculations are written on native C. To build them one has to use Android NDK, all necessary build files (as ANT builds imported into Gradle) are supplied as well as prebuild native libraries (folder `/psm/src/main/libs`). To build those libraries from the scratch do followinf:
+   1. Create/edit `psm/src/main/jni/ndk.properties` (example given in file `ndk.properties.canonical`)
+   2. Launch either ANT build file `build_native.xml` or Gradle task `buildJni` - it's basically the same task
