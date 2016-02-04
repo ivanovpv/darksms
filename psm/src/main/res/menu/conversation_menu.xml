@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/callMenuId"
+        android:icon="@drawable/dial"
+        android:title="@string/call"/>
+    <item
+        android:id="@+id/viewContactMenuId"
+        android:icon="@drawable/contact"
+        android:title="@string/viewContact" />
+    <item
+        android:id="@+id/newContactMenuId"
+        android:icon="@drawable/contact_edit"
+        android:title="@string/newContact"/>
+    <item
+        android:id="@+id/inviteMenuId"
+        android:icon="@drawable/invite"
+        android:title="@string/invite" />
+</menu>

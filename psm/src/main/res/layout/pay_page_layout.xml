@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $ Gorets
+  ~   $Rev: 246 $ 10.07.2012
+  ~   $LastChangedDate: 2013-06-19 10:58:01 +0400 (Ср, 19 июн 2013) $
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your count 100k"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy 5 ssms"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="45dp"/>
+
+
+        <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy 10 ssms"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="45dp"/>
+
+
+        <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy 25 ssms"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="45dp"/>
+
+
+        <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy 50 ssms"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="45dp"/>
+
+
+        <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy 100 ssms"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true"
+                android:onClick="buyAction"
+                android:textSize="45dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

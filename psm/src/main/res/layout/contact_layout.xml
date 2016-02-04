@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 471 $
+  ~   $LastChangedDate: 2014-01-17 14:57:25 +0400 (Пт, 17 янв 2014) $
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+    <FrameLayout
+            android:id="@+id/pictureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <ImageView
+                android:id="@+id/contactPicture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/contact"
+                android:scaleType="centerCrop"/>
+        <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|right"
+                android:clickable="true"
+                android:onClick="contactEditAction"
+                android:id="@+id/editContact"
+                android:src="@drawable/contact_edit_middle_shadow"
+                />
+    </FrameLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/pictureLayout"
+            android:orientation="vertical" >
+        <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dark_grey"
+            android:layout_below="@id/pictureLayout"
+            />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pictureLayout"
+            android:orientation="vertical" >
+        <ListView
+                android:id="@+id/phonesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+    </LinearLayout>
+</RelativeLayout>

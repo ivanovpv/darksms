@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="36dp"
+    android:minHeight="36dp"
+    android:updatePeriodMillis="86400000"
+    android:previewImage="@drawable/psm_widget_preview"
+    android:initialLayout="@layout/psm_widget_layout"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen">
+</appwidget-provider>
+    <!--android:configure="ru.ivanovpv.gorets.psm.widget.PsmWidgetConfigure"-->
+    <!--android:initialKeyguardLayout="@layout/example_keyguard"-->
+

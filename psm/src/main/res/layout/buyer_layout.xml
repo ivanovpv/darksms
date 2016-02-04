@@ -1,0 +1,104 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/purseText"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            />
+        <ProgressBar
+                android:id="@+id/progressBarWait"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                />
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarStyle="outsideInset"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/buyer_screen"
+            android:orientation="vertical">
+            <!--Button
+                    android:onClick="onSendMessageClicked"
+                    android:text="Send message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    /-->
+            <Button
+                    android:id="@+id/buy_10_messages_button"
+                    android:onClick="onBuy10MessagesButtonClicked"
+                    android:text="@string/buy10messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    />
+            <Button
+                    android:id="@+id/buy_50_messages_button"
+                    android:onClick="onBuy50MessagesButtonClicked"
+                    android:text="@string/buy50messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    />
+            <Button
+                    android:id="@+id/buy_100_messages_button"
+                    android:onClick="onBuy100MessagesButtonClicked"
+                    android:text="@string/buy100messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            <Button
+                    android:id="@+id/monthly_subscription_button"
+                    android:onClick="onMonthlyButtonClicked"
+                    android:text="Monthly subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    />
+            <Button
+                    android:id="@+id/annual_subscription_button"
+                    android:onClick="onAnnualButtonClicked"
+                    android:text="Annual subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    />
+            <Button
+                    android:id="@+id/buy_premium_button"
+                    android:text="@string/buyPremium"
+                    android:onClick="onBuyPremiumButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <Button
+                    android:id="@+id/buy_comfort_pin_button"
+                    android:text="@string/buyComfortPin"
+                    android:onClick="onBuyComfortPinClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <Button
+                    android:id="@+id/buy_hidden_conversation_button"
+                    android:text="@string/buyHiddenConversation"
+                    android:onClick="onBuyHiddenConversationClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

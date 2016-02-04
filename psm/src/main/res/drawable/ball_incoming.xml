@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com), Egor Sarnavsky (egoretss@gmail.com) 
+  ~ and Oleksandr Lashchenko (gsorron@gmail.com) 2012-2013. All Rights Reserved.
+  ~    $Author: $
+  ~    $Rev: $
+  ~    $LastChangedDate:  $
+  ~    $URL: $
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
+    <solid
+            android:color="@color/light_yellow"/>
+    <size
+            android:width="12dp"
+            android:height="12dp"/>
+</shape>

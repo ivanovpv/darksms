@@ -1,0 +1,4 @@
+/build
+*.iml
+/src/main/jni/ndk.properties
+/src/main/obj

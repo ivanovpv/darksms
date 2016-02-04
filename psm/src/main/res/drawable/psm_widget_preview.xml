@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/psm"
+        android:id="@+id/psmIcon"
+        android:top="0dp"
+        android:left="0dp"
+        android:right="36dp"
+        android:bottom="36dp"
+        />
+    <item
+        android:drawable="@drawable/ball_unread"
+        android:id="@+id/psmIcon"
+        android:top="30dp"
+        android:left="30dp"
+        android:right="38dp"
+        android:bottom="38dp"
+        />
+</layer-list>

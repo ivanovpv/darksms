@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 246 $
+  ~   $LastChangedDate: 2013-06-19 10:58:01 +0400 (Ср, 19 июн 2013) $
+
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rowLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+        <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bdsdssdsdsdssdsdsddsdsdsdfdfdfdfdfdfdfdfdfdfddfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/sky_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+                android:id="@+id/millis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#77FF0000"
+                android:text="12 nov 1962"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $ Gorets
+  ~   $Rev: 485 $ 0.1
+  ~   $LastChangedDate: 2014-01-27 15:48:59 +0400 (Пн, 27 янв 2014) $ 22.06.2012
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+            android:key="about"
+            android:persistent="false"
+            android:title="@string/about"
+            android:summary="@string/pressToReadAbout"
+            android:selectable="true"/>
+    <Preference
+            android:key="rate"
+            android:persistent="false"
+            android:title="@string/rateApp"
+            android:summary="@string/pressToRate"
+            android:selectable="true"/>
+    <Preference
+            android:key="eula"
+            android:persistent="false"
+            android:title="@string/eula_title"
+            android:summary="@string/pressToReadEULA"
+            android:selectable="true"/>
+    <CheckBoxPreference
+            android:key="askPIN"
+            android:persistent="true"
+            android:title="@string/secureByPin"
+            android:summary="@string/askPinToRead"
+            android:selectable="true"/>
+    <CheckBoxPreference
+            android:key="comfortPIN"
+            android:persistent="false"
+            android:dependency="askPIN"
+            android:defaultValue="false"
+            android:title="@string/comfortPIN"
+            android:summary="@string/askPinOnceScreenUnlocked"
+            android:selectable="true"/>
+    <RingtonePreference
+            android:key="smsRingTone"
+            android:persistent="true"
+            android:ringtoneType="all"
+            android:title="@string/messageRingtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            />
+    <ListPreference
+            android:key="protectionPrivacyLevel"
+            android:persistent="true"
+            android:title="@string/protectionPrivacyLevelTitle"
+            android:entries="@array/privacyLevelEntries"
+            android:entryValues="@array/privacyLevelValues"
+            android:defaultValue="0" />
+    <ListPreference
+            android:key="messagingPrivacyLevel"
+            android:persistent="true"
+            android:title="@string/messagingPrivacyLevelTitle"
+            android:entries="@array/privacyLevelEntries"
+            android:entryValues="@array/privacyLevelValues"
+            android:defaultValue="0" />
+    <Preference
+            android:key="fingerPrintBasic"
+            android:title="@string/publicKeyFingerPrintBasic"
+            android:enabled="false"
+            android:persistent="false"
+            />
+    <!--Preference
+            android:key="fingerPrintMedium"
+            android:title="@string/publicKeyFingerPrintMedium"
+            android:enabled="false"
+            android:persistent="false"
+            />
+    <Preference
+            android:key="fingerPrintHigh"
+            android:title="@string/publicKeyFingerPrintHigh"
+            android:enabled="false"
+            android:persistent="false"
+            /-->
+    <Preference
+            android:key="reset"
+            android:persistent="false"
+            android:title="@string/reset"
+            android:summary="@string/pressToReset"
+            android:selectable="true"/>
+
+
+    <!--CheckBoxPreference
+            android:key="@string/loginEnabledKey"
+            android:title="@string/settings_login_enabled_large"
+            android:summary="@string/settings_login_enabled_small"
+            android:defaultValue="false" />
+    <Preference
+            android:dependency="@string/loginEnabledKey"
+            android:key="@string/changePasswordKey"
+            android:title="@string/settings_change_password_large"
+            android:summary="@string/settings_change_password_small"/>
+    <EditTextPreference
+            android:dependency="@string/loginEnabledKey"
+            android:key="@string/lockInactiveAppKey"
+            android:title="@string/settings_lock_timeout"
+            android:summary="@string/settings_set_inactivity_timeout"
+            android:inputType="number"
+            android:defaultValue="15"/>
+    <CheckBoxPreference
+            android:dependency="@string/loginEnabledKey"
+            android:key="@string/lockWithScreenKey"
+            android:title="@string/settings_lock_with_screen"
+            android:summary="@string/settings_set_lock_with_screen"
+            android:defaultValue="true" /-->
+</PreferenceScreen>

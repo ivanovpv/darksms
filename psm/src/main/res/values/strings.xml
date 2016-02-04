@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 493 $
+  ~   $LastChangedDate: 2014-02-02 18:18:32 +0400 (Вс, 02 фев 2014) $
+  -->
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- general -->
+    <string name="psm">Dark SMS</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="noMessages">No messages</string>
+    <string name="noContacts">No contacts</string>
+    <string name="messages">Messages</string>
+    <string name="newMessage">New message</string>
+    <string name="newContactMenu">New contact</string>
+    <string name="contact">Contact</string>
+    <string name="phone">Phone</string>
+    <string name="contacts">Contacts</string>
+    <string name="psms">psms</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="forward">Forward</string>
+    <string name="search">Search</string>
+    <string name="anonymous">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="do_you_want_to_continue">Do you want to continue?</string>
+
+    <!-- PSMActivity -->
+    <string name="deleteThread">Delete thread</string>
+    <string name="deleteThreadWarning">Do you really want to delete this conversation thread?</string>
+    <string name="deleteContact">Delete contact</string>
+    <string name="deleteContactWarning">Do you really want to delete this contact?</string>
+    <string name="viewConversation">View conversation</string>
+    <string name="viewContact">View contact</string>
+    <string name="newContact">Create contact</string>
+    <string name="call">Call</string>
+    <string name="changeSMSApplication">Change SMS Application</string>
+    <string name="usePSMAsDefault">Use Dark SMS as default SMS application?</string>
+    <string name="expired">Using of test version is expired, please install official version</string>
+    <string name="protectThread">Protect thread</string>
+    <string name="protectThreadWarning">Do you really want to protect this conversation thread?</string>
+    <string name="unProtectThread">Clear thread protection</string>
+    <string name="unProtectThreadWarning">Do you really want to clear protection of this conversation thread?</string>
+    <string name="errorProtecting">Some errors might happen, not all messages protected</string>
+    <string name="errorUnProtecting">Some errors might happen, not from all messages cleared protection</string>
+    <string name="incompatible">Application is incompatible with this version of Android - sorry for inconvenience</string>
+
+    <!-- About -->
+    <string name="pressToReadAbout">Press to processed</string>
+    <string name="about">About Dark SMS</string>
+    <string name="versionPSM">Dark SMS v.&#160;</string>
+    <string name="descriptionPSM">Secure SMS messenger\n for Android devices</string>
+    <string name="copyright">Copyright (c) 2014 Pavel Ivanov, Egor Sarnavsky  &amp; Olexander Laschenko"</string>
+    <string name="emailAuthor">Email: ivanovpv@gmail.com"</string>
+    <string name="twitterAuthor">Twitter: http://twitter.com/pridurok</string>
+    <string name="support">Support: http://facebook.com/pages/Cellbox/153225434730772</string>
+    <string name="credits">Credits</string>
+    <string name="creditsURL">file:///android_asset/credits.html</string>
+    <string name="moreURL">&lt;a href=\'file:///android_asset/credits.html\'&gt;more...&lt;/a&gt;</string>
+    <string name="lessURL">&lt;a href=\'file:///android_asset/credits.html\'&gt;less...&lt;/a&gt;</string>
+    <string name="showEula">License</string>
+    <string name="otherProducts">market://search?q=pub:Pavel Ivanov</string>
+    <string name="other">More</string>
+
+    <!-- PhoneContact -->
+    <string name="conversation">Conversation</string>
+
+    <!-- KeysInfo -->
+    <string name="respondentKeys">Available public keys</string>
+    <string name="noKeys">No available keys. In order to receive public key you should invite other party</string>
+    <string name="keyFingerPrint">Key finger-print:&#160;</string>
+    <string name="keyType">Key type:&#160;</string>
+    <string name="keyReceived">Received at:&#160;</string>
+
+    <!-- SMSActivity -->
+    <string name="open">Open</string>
+    <string name="delete">Delete</string>
+    <string name="protect">Protect</string>
+    <string name="unprotect">Clear protection</string>
+    <string name="emptyMessage">Empty message or recipient\'s address</string>
+    <string name="messageTo">Message to:</string>
+    <string name="messageSent">&#160;sent</string>
+    <string name="copy">Copy</string>
+    <string name="subject">Subject:&#160;</string>
+
+    <!-- ConversationActivity -->
+    <string name="messageDetails">Message details</string>
+    <string name="invite">Invite</string>
+    <string name="balanceZero">Your Dark SMS balance is zero try buy something or send as plain text SMS</string>
+    <string name="cantUnprotect">Can\'t clear protection: device was changed or wiped!</string>
+    <string name="cantDecrypt">Can\'t decrypt message: device was changed or wiped!</string>
+    <string name="dontHavePublicKey">Can\'t decrypt message: missing public key for this party or message was not addressed to you, also probably device was changed or wiped!</string>
+    <string name="from">From</string>
+    <string name="whom">Whom</string>
+    <string name="date">Date</string>
+    <string name="body">Message</string>
+    <string name="storedBody">Stored as</string>
+    <string name="type">Type</string>
+    <string name="forwardWarning">Warning! Other party will not be able to read protected or secure message!\n\nDo you want decrypt message before forwarding or send it \"as-is\"?</string>
+    <string name="sendAsIs">As is</string>
+    <string name="cantSendMessage">Can\'t send message</string>
+    <string name="transport">Transport protocol</string>
+    <string name="sms">sms</string>
+    <string name="mms">mms</string>
+
+    <!-- SMS/MMS Receivers -->
+    <string name="secretSMSReceived">Secret SMS received</string>
+    <string name="invitationSMSReceived">Invitation received</string>
+    <string name="acceptSMSReceived">Invite accept received</string>
+    <string name="unreadMessages">&#160;- unread messages</string>
+    <string name="multimediaMessage">Multimedia message</string>
+
+    <!-- invitation -->
+    <string name="invitationSent">Invitation sent with key:&#160;</string>
+    <string name="invitationReceived">Invitation received with key:&#160;</string>
+    <string name="invitationDetected">You received invitation to start secure messaging with:\n</string>
+    <string name="doYouAcceptInvitation">Do you accept invitation?</string>
+    <string name="invitationAccepted">Invitation accepted, sent key:&#160;</string>
+    <string name="acceptReceived">Your invite is accepted, received key:&#160;</string>
+    <string name="processInvitation">To process invitation you should create new contact in your contact list</string>
+    <string name="invitationIgnored">Invitation ignored, key:&#160;</string>
+    <string name="inviteWarning1">1. Sending of invitation will be charged by your mobile operator as usual SMS</string>
+    <string name="inviteWarning2">2. Other party need to have Dark SMS installed on its device. Link to install Dark SMS will be send with invitation</string>
+    <string name="neverShowWarning">Never show</string>
+    <string name="inviteWarningTitle">Warning!</string>
+    <string name="confirmInvitationTitle">Confirm invitation</string>
+    <string name="invitationMessageText">This is invitation to use Dark SMS, Android app for exchanging cipher SMS, to accept invitation you need to install Dark SMS</string>
+    <string name="psmMarketUrl">Google Play http://goo.gl/BVXvk</string>
+    <string name="invitationCorrupted">Invitation corrupted! Please update application or ask to resend it!</string>
+    <string name="receivedAcceptFromUnknownContact">Received invitation accept from unknown contact:&#160;</string>
+    <string name="alreadyInvited">Already invited</string>
+    <string name="inviteAgain">Invite your party again?</string>
+
+    <!-- ConversationCursorRowAdapter -->
+    <string name="invitationAcceptMessageBox">Your invitation was accepted, now you can send secret SMS to&#160;</string>
+    <string name="mmsDownload">Download MMS</string>
+
+    <!-- ConversationsCursorRowAdapter -->
+    <string name="cipherMessage">[Cipher message]</string>
+    <string name="protectedMessage">[Protected message]</string>
+    <string name="invitationMessage">[Invitation message]</string>
+    <string name="inviteAcceptMessage">[Invite accept message]</string>
+    <string name="lemonMessage">[Lemon message]</string>
+    <string name="plainMessage">[Plain message]</string>
+
+    <!-- Protocol -->
+    <string name="invitationTo">Invitation to:&#160;</string>
+
+    <!-- MessageBox -->
+    <string name="error">Fatal error detected\n</string>
+
+    <!-- BuyerActivity -->
+    <string name="inAppUnavailable">In-app billing service is unavailable, please update Android Market/Play to version >= 3.9.16</string>
+    <string name="problemInAppSetting">Problem setting up in-app billing:&#160;</string>
+    <string name="thanxRefill">Thank you for refilling your secret SMS balance!</string>
+    <string name="thanxMonthlySubscription">Thank you for monthly subscription!</string>
+    <string name="thanxAnnualSubscription">Thank you for annual subscription!</string>
+    <string name="thanxPremium">Thank you for upgrading to premium!</string>
+    <string name="thanxComfortPin">Thank you for purchasing comfort PIN!</string>
+    <string name="thanxHiddenConversation">Thank you for purchasing hidden conversation!</string>
+    <string name="payloadIncorrect">Looks like that someone tries to cheat purchase! Good attempt, but you fail!</string>
+    <string name="purchaseCheatDetected">False purchase detected. Good attempt, but you fail!</string>
+    <string name="errorConsuming">Error while refilling your balance! Error code:&#160;</string>
+    <string name="tankBalance">Your Dark SMS balance is:&#160;</string>
+    <string name="pursePremium">You have premium access, so you can send unlimited secret SMS\'!</string>
+    <string name="purseMonthly">You have monthly subscription to unlimited secret SMS\' to send</string>
+    <string name="purseAnnual">You have annual subscription to unlimited secret SMS\' to send</string>
+    <string name="buySKU">Buy</string>
+    <string name="buy10messages">Buy 10 messages</string>
+    <string name="buy50messages">Buy 50+10 messages</string>
+    <string name="buy100messages">Buy 100+50 messages</string>
+    <string name="buyPremium">Buy premium</string>
+    <string name="buyComfortPin">Buy comfort PIN</string>
+    <string name="buyHiddenConversation">Buy option to hide conversation</string>
+    <string name="psm_store">Store</string>
+    <string name="billing_not_supported_title">Billing not supported</string>
+    <string name="billing_not_supported_message">The Market billing service is not available at this time.  You can continue to use this app but you won\'t be able to make purchases.</string>
+    <string name="cannot_connect_title">Can\'t connect to Market</string>
+    <string name="cannot_connect_message">This app cannot connect to Market. Your version of Market may be out of date. You can continue to use this app but you won\'t be able to make purchases.</string>
+    <string name="restoring_transactions">Restoring transactions</string>
+    <string name="learn_more">Learn more</string>
+    <string name="help_url" formatted="false">http://market.android.com/support/bin/answer.py?answer=1050566&amp;hl=%lang%&amp;dl=%region%</string>
+    <string name="buy">Buy</string>
+    <string name="select_item">Select an item</string>
+
+    <string name="tensms">10 secret SMS</string>
+    <string name="fivtysms">50 secret SMS</string>
+    <string name="hundredsms">100 secret SMS</string>
+    <string name="premium">Unlimited secret SMS</string>
+
+    <!-- settings  -->
+    <string name="settings">Settings</string>
+    <string name="publicKeyFingerPrintBasic">Public key finger-print</string>
+    <string name="publicKeyFingerPrintMedium"></string>
+    <string name="publicKeyFingerPrintHigh"></string>
+    <string name="pinShouldBeEntered">PIN code should be entered in all fields</string>
+    <string name="pinsAreNotInentical">PIN codes are not identical</string>
+    <string name="incorrectPin">PIN code is incorrect</string>
+    <string name="enterPin">Enter PIN</string>
+    <string name="setPin">Set PIN code</string>
+    <string name="oldPin">Enter old PIN</string>
+    <string name="newPin">Enter new PIN</string>
+    <string name="confirmPin">Confirm PIN</string>
+    <string name="secureByPin">Secure by PIN</string>
+    <string name="askPinToRead">Ask PIN code to read secured messages</string>
+    <string name="comfortPIN">Comfort PIN</string>
+    <string name="askPinOnceScreenUnlocked">Ask PIN once per session</string>
+    <string name="messageRingtone">Message ringtone</string>
+    <string name="notApplicable">Not applicable</string>
+    <string name="cryptoWarning">Using of this feature is prohibited by national legislation and international conventions like Wassenaar Arrangement: www.wassenaar.org</string>
+    <string name="pinExists">PIN was set before</string>
+    <string name="pinChange">Do you want to change PIN or use old one?</string>
+    <string name="change">Change</string>
+    <string name="useOld">Old</string>
+    <string name="reset">Reset application</string>
+    <string name="pressToReset">Press to reset application</string>
+    <string name="resetWarning">WARNING!\nApplication reset will:\n1. Clear protection from all protected messages;\n2. Decrypt all secure messages;\n3. Delete all keys received from all contacts;\n4. Regenerate device private key;\n5. Clear user defined PIN code.\n\nNormally, application reset is recommended only before application uninstall. Application reset results can\'t be undone\n\nAre you really sure!?</string>
+    <string name="resetError">Some errors might happen: not from all messages cleared protection or not all messages decrypted!</string>
+
+    <!-- Context menu  -->
+    <string name="context_menu_settings">Settings</string>
+    <string name="context_menu_logout">Logout</string>
+    <!-- rate app-->
+    <string name="couldnt_launch_market">Couldn\'t launch market</string>
+    <string name="rateApp">Rate application</string>
+    <string name="pressToRate">Press to rate in Google Play</string>
+    <string name="would_you_rate_app">Would you like rate application?</string>
+    <string name="dontaskanymore">Don\'t ask anymore</string>
+    <string name="later">Later</string>
+    <!-- sms sender -->
+    <string name="send">Send</string>
+    <string name="add">Add</string>
+    <string name="sendSMS">Send SMS</string>
+    <string name="enterRecipient">Enter recipient</string>
+    <string name="enterMessage">Enter message</string>
+    <!-- End User License Agreement -->
+    <string name="eula_title">License</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="eula_asset">eula.txt</string>
+    <string name="pressToReadEULA">Press to processed EULA</string>
+    <string name="pay_title">Payment</string>
+    <!-- SMS sending errors -->
+    <string name="smsSent">SMS sent</string>
+    <string name="smsDelivered">SMS delivered</string>
+    <string name="smsCanceled">SMS canceled</string>
+    <string name="smsGenericFailure">Can\'t send SMS: generic failure</string>
+    <string name="smsNoService">Can\'t send SMS: no service</string>
+    <string name="smsNullPDU">Can\'t send SMS: null PDU</string>
+    <string name="smsRadioOff">Can\'t send SMS: radio off</string>
+    <string name="smsUnknowError">Can\'t send SMS: unknown error</string>
+
+    <!-- privacy level -->
+    <string name="protectionPrivacyLevelTitle">Protection level</string>
+    <string name="messagingPrivacyLevelTitle">Messaging security level</string>
+    <string-array name="privacyLevelEntries">
+        <item>Basic (56 bit)</item>
+        <item>Medium (256 bit)</item>
+        <item>High (320 bit)</item>
+    </string-array>
+    <string-array name="privacyLevelValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="keyExchangeProtocolEntries">
+        <item>Dummy (test)</item>
+        <item>Diffie-Hellman 512 bit</item>
+        <item>Elliptic curve 112 bit</item>
+        <item>Elliptic curve 256 bit</item>
+        <item>Elliptic curve 384 bit</item>
+    </string-array>
+
+    <!--debug/free related-->
+    <string name="acraToastText">Sending email with crash report to developers</string>
+    <string name="itsFree">Enjoy free version! You don\'t need to pay!</string>
+    <!-- The following are reserved skus defined by Market for testing and not need to be translated. -->
+    <string name="android_test_canceled">android.test.canceled</string>
+    <string name="android_test_purchased">android.test.purchased</string>
+    <string name="android_test_item_unavailable">android.test.item unavailable</string>
+    <string name="android_test_refunded">android.test.refunded</string>
+    <string name="edit_buy_simulate">Edit Buy Simulate</string>
+    <string name="edit_buy_simulate_title">Edit the developer buy simulate associated with this purchase</string>
+    <string name="edit_buy_simulate_accept">Set simulation</string>
+    <string name="edit_buy_simulate_clear">No simulation</string>
+    <string name="items_for_sale">Items for sale</string>
+    <string name="items_you_own">Items you own</string>
+    <string name="recent_transactions">Recent activity</string>
+
+    <!-- don't touch them!!! Ask ivanovpv@gmail.com -->
+    <string name="res01">9EFC9235A99B4311CB85A43E826EAFE4A03115A2CC5A76A636D5A6BBCEC4734E358F2A29E9812CCC232433CB78DDEF9E8F76681BA6DE0A5FBA3914849E4C24D041EB8695EEED5B7E18B2775195A70FFBA80B4DD9DA87242F9FBF8692CEE875F3D8304BC4997B0A974292A4B2F9AE797A36AA2853C2F755A3CE117B33FB1F92DF04C0CCD5C056384083692CC6B8760AB71FE498D1E48A1A2D1F8B1966C9C77E8276D2BD1120FCF8F13A4EF223AA5B41BA922A4ECDBD555CBC24DDE488A4D03E321F823C239D813D8E04AD8E6202A42AE01D88B27FEB34B231E2440EC0A5475ABD0FD6DCACFBA8616E2EC11E7F9FDA67CD70BDE793C099D4621A68310611839452DD5279C881475A8923C5D4FEE68432343DC23C7EDCD567B7988F214ED13A8F3D6EC87FE972CD14AC9A041BEEF57560D64AEFCBA3EAE00D130C927223CEE620CFEC0B61E804F9143DC306267BA467489AAF0238BAA53723EB61B5D1A0BBBA4D4A27BC2F6ACFD970E09EF25C98CA37DF2595E1629146BDD732B84016E6B05457F0729988B7A1B53B0876DA7132F4D360E2515B2FB189827F023E6E23ABD980BEEF8D6925D1DD0B51A0498094E9EA881E290EBA5F1AF4D360E2</string>
+    <string name="res02">B5ABD7FFC7C68A4480EA9A8F6F090DD069BD971B58A25CC344DED530E0849538A7447D3FE3774C6621E09BC1CC49E7A2958CA1B49BD791212EEAC84A06F40BCF44DED530E0849538A7447D3FE3774C66</string>
+    <string name="mas01">v5hm43mihd2qrchakab46oehahgslle91oju3msj2831usknr30</string>
+</resources>
+

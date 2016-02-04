@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2013.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 430 $
+  ~   $LastChangedDate: 2013-11-22 12:10:16 +0400 (Пт, 22 ноя 2013) $
+  ~   $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/res/menu/contact_contextmenu.xml $
+
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/viewContact"
+            android:title="@string/viewContact"/>
+    <item
+            android:id="@+id/deleteContact"
+            android:title="@string/deleteContact"/>
+</menu>

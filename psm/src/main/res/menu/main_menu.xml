@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2013.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 337 $
+  ~   $LastChangedDate: 2013-09-19 23:04:06 +0400 (Чт, 19 сен 2013) $
+  ~   $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/res/menu/menu.xml $
+
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menu_search"
+            android:actionViewClass="com.actionbarsherlock.widget.SearchView"
+            android:icon="@drawable/search_checkbox"
+            android:showAsAction="ifRoom|collapseActionView"
+            android:title="Search"/>
+    <item
+            android:id="@+id/newSmsMenuId"
+            android:icon="@drawable/sms_new"
+            android:title="@string/newMessage"/>
+    <item
+            android:id="@+id/newContactMenuId"
+            android:icon="@drawable/contact_edit"
+            android:title="@string/newContact"/>
+    <item
+            android:id="@+id/psmStoreId"
+            android:icon="@drawable/refill"
+            android:title="@string/psm_store" />
+    <item
+            android:id="@+id/contextMenuSettingsId"
+            android:icon="@drawable/settings"
+            android:title="@string/context_menu_settings" />
+</menu>

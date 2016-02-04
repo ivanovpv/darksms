@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2010 Pavel Ivanov (ivanovpv@gmail.com)
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:minWidth="300dp"
+    >
+    <ScrollView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarStyle="outsideInset"
+            >
+    <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:stretchColumns="*">
+    <TableRow>
+        <TextView android:text="@string/versionPSM"
+                  android:id="@+id/version"
+                  android:layout_weight="2"
+                  android:gravity="center_horizontal"
+                  android:layout_width="0dp"
+                  android:layout_marginBottom="10sp"/>
+    </TableRow>
+    <TableRow android:layout_width="wrap_content">
+        <TextView
+                android:text="@string/descriptionPSM"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/copyright"
+                  android:layout_weight="2"
+                  android:gravity="center_horizontal"
+                  android:layout_marginBottom="10sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+                  android:gravity="center_horizontal"
+                  android:layout_weight="2"
+                  android:layout_marginBottom="10sp"
+                  android:id="@+id/more"
+                  android:autoLink="all"/>
+    </TableRow>
+    <TableRow android:id="@+id/creditsRow"/>
+    <TableRow>
+        <TextView android:text="@string/emailAuthor"
+                  android:autoLink="email"
+                  android:layout_weight="2"
+                  android:gravity="center_horizontal"
+                  android:layout_width="0dp"
+                  android:layout_marginBottom="10sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/twitterAuthor"
+                  android:autoLink="web"
+                  android:layout_weight="2"
+                  android:gravity="center_horizontal"
+                  android:layout_width="0dp"
+                  android:layout_marginBottom="10sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/support"
+                  android:autoLink="web"
+                  android:layout_weight="2"
+                  android:gravity="center_horizontal"
+                  android:layout_width="0dp"
+                  android:layout_marginBottom="10sp"/>
+    </TableRow>
+    <TableRow android:id="@+id/buttonsLayout">
+        <Button android:id="@+id/ok"
+                android:layout_weight="1"
+                android:text="@string/ok"
+                android:layout_width="0dp"
+        />
+        <Button android:id="@+id/other"
+                android:layout_weight="1"
+                android:text="@string/other"
+                android:layout_width="0dp"
+        />
+        <!--Button android:id="@+id/showEula"
+                android:layout_weight="1"
+                android:text="@string/showEula"
+                android:layout_width="0dp"
+        /-->
+    </TableRow>
+    </TableLayout>
+    </ScrollView>
+    </LinearLayout>

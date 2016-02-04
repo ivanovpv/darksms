@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 246 $
+  ~   $LastChangedDate: 2013-06-19 10:58:01 +0400 (Ср, 19 июн 2013) $
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true">
+
+    <item 
+    	android:state_window_focused="false"
+        android:drawable="@android:color/transparent" />
+    <item 
+    	android:state_pressed="true"
+        android:drawable="@drawable/action_item_selected"/>
+    <item 
+    	android:state_focused="true"
+        android:drawable="@drawable/action_item_selected"/>
+    <item
+        android:drawable="@android:color/transparent"/>
+        
+</selector>

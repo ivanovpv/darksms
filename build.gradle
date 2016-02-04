@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) 2015
+ * Ivanov Pavel (ivanovpv@gmail.com)
+ * Egor Sarnavsky (egoretss@gmail.com)
+ * Alexander Laschenko (gsorron@gmail.com)
+ * All Rights Reserved.
+ *
+ * Project: psm
+ * Name: build.gradle
+ * Created: 16.10.15 14:50
+ * Modified: 16.10.15 14:50
+ * User: pivanov
+ *
+ */
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}

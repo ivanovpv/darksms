@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 493 $
+  ~   $LastChangedDate: 2014-02-02 18:18:32 +0400 (Вс, 02 фев 2014) $
+  -->
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="ru">
+
+    <!-- general -->
+    <string name="psm">Dark SMS</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="noMessages">Нет сообщений</string>
+    <string name="noContacts">Нет контактов</string>
+    <string name="messages">Сообщения</string>
+    <string name="newMessage">Новое сообщение</string>
+    <string name="newContactMenu">Новый контакт</string>
+    <string name="contact">Контакт</string>
+    <string name="phone">Телефон</string>
+    <string name="contacts">Контакты</string>
+    <string name="psms">psms</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="forward">Переслать</string>
+    <string name="search">Поиск</string>
+    <string name="anonymous">Неизвестный</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="do_you_want_to_continue">Вы хотите продолжить?</string>
+
+    <!-- PSMActivity -->
+    <string name="deleteThread">Удалить беседу</string>
+    <string name="deleteThreadWarning">Вы действительно хотите удалить эту беседу?</string>
+    <string name="deleteContact">Удалить контакт</string>
+    <string name="deleteContactWarning">Вы действительно хотите удалить этот контакт?</string>
+    <string name="viewConversation">Открыть беседу</string>
+    <string name="viewContact">Открыть контакт</string>
+    <string name="newContact">Создать контакт</string>
+    <string name="call">Набор</string>
+    <string name="changeSMSApplication">Изменить SMS приложение</string>
+    <string name="usePSMAsDefault">Использовать Dark SMS как приложение по умолчанию?</string>
+    <string name="expired">Это тестовая версия с ограниченным сроком, пожалуйста установите официальную версию</string>
+    <string name="protectThread">Защитить переписку</string>
+    <string name="protectThreadWarning">Вы действительно хотите защитить всю переписку?</string>
+    <string name="unProtectThread">Снятие защиты с переписки</string>
+    <string name="unProtectThreadWarning">Вы действительно хотите снять защиту со всей переписки?</string>
+    <string name="errorProtecting">Произошли ошибки, не все сообщения защищены</string>
+    <string name="errorUnProtecting">Произошли ошибки, не со всех сообщений снята защита</string>
+    <string name="incompatible">Приложение несовместимо с данной версией ОС Андроид - извините за неудобство</string>
+
+    <!-- About -->
+    <string name="pressToReadAbout">Нажмите для продолжения</string>
+    <string name="about">О программе</string>
+    <string name="versionPSM">Dark SMS v.&#160;</string>
+    <string name="descriptionPSM">Секретная переписка по СМС\n для Android устройств</string>
+    <string name="copyright">Copyright (c) 2013 Pavel Ivanov, Egor Sarnavsky  &amp; Olexander Laschenko"</string>
+    <string name="emailAuthor">Email: ivanovpv@gmail.com"</string>
+    <string name="twitterAuthor">Twitter: http://twitter.com/pridurok</string>
+    <string name="support">Поддержка: http://facebook.com/pages/Cellbox/153225434730772</string>
+    <string name="credits">Благодарности</string>
+    <string name="creditsURL">file:///android_asset/credits.html</string>
+    <string name="moreURL">&lt;a href=\'file:///android_asset/credits.html\'&gt;more...&lt;/a&gt;</string>
+    <string name="lessURL">&lt;a href=\'file:///android_asset/credits.html\'&gt;less...&lt;/a&gt;</string>
+    <string name="showEula">Лицензия</string>
+    <string name="otherProducts">market://search?q=pub:Pavel Ivanov</string>
+    <string name="other">Еще</string>
+
+    <!-- PhoneContact -->
+    <string name="conversation">Беседа</string>
+
+    <!-- KeysInfo -->
+    <string name="respondentKeys">Доступные публичные ключи</string>
+    <string name="noKeys">Нет доступных ключей. Для того, чтобы получить публичный ключ вам необходимо пригласить адресат к секретной переписке</string>
+    <string name="keyFingerPrint">Отпечаток ключа:&#160;</string>
+    <string name="keyType">Тип ключа:&#160;</string>
+    <string name="keyReceived">Получен:&#160;</string>
+
+    <!-- SMSActivity -->
+    <string name="open">Открыть</string>
+    <string name="delete">Удалить</string>
+    <string name="protect">Защитить</string>
+    <string name="unprotect">Снять защиту</string>
+    <string name="emptyMessage">Пустое сообщение или не задан адресат</string>
+    <string name="messageTo">Сообщение для:</string>
+    <string name="messageSent">&#160;отправлено</string>
+    <string name="copy">Копировать</string>
+    <string name="subject">Тема:&#160;</string>
+
+    <!-- ConversationActivity -->
+    <string name="messageDetails">Детали сообщения</string>
+    <string name="invite">Приглашение</string>
+    <string name="balanceZero">Баланс ваших секретных СМС ноль попробуйте пополнить ваш баланс или отправьте обычное текстовое сообщение</string>
+    <string name="cantUnprotect">Невозможно снять защиту: устройство было изменено или очищено!</string>
+    <string name="cantDecrypt">Невозможно расшифровать сообщение: устройство было изменено или очищено!</string>
+    <string name="dontHavePublicKey">Невозможно дешифровать сообщение: у вас нет публичного ключа адресата или сообщение не предназначено для Вас, также возможно устройство было изменено или очищено!</string>
+    <string name="from">Отправитель</string>
+    <string name="whom">Получатель</string>
+    <string name="date">Дата</string>
+    <string name="body">Сообщение</string>
+    <string name="storedBody">Сохранено как</string>
+    <string name="type">Тип</string>
+    <string name="forwardWarning">Внимание! Получатель не сможет прочитать защищенное или секретное сообщение!\n\nРасшифровать сообщение перед пересылкой или отправить как есть?</string>
+    <string name="sendAsIs">Как есть</string>
+    <string name="cantSendMessage">Невозможно отправить сообщение</string>
+    <string name="transport">Транспортный протокол</string>
+    <string name="sms">sms</string>
+    <string name="mms">mms</string>
+
+    <!-- SMS/MMS Receivers -->
+    <string name="secretSMSReceived">Получен секретный СМС</string>
+    <string name="invitationSMSReceived">Получено приглашение</string>
+    <string name="acceptSMSReceived">Получено уведомление о принятии приглашения</string>
+    <string name="unreadMessages">&#160;- непрочитанных сообщений</string>
+    <string name="multimediaMessage">Мультимедийное сообщение</string>
+
+    <!-- invitation -->
+    <string name="invitationSent">Приглашение отправлено с ключом:&#160;</string>
+    <string name="invitationReceived">Получено приглашение с ключом:&#160;</string>
+    <string name="invitationDetected">Вы получили приглашение для начала секретной СМС переписки с:\n</string>
+    <string name="doYouAcceptInvitation">Вы принимаете приглашение?</string>
+    <string name="invitationAccepted">Приглашение принято, отправлен ключ:&#160;</string>
+    <string name="acceptReceived">Ваше приглашение принято, получен ключ:&#160;</string>
+    <string name="processInvitation">Чтобы принять приглашение вы должны создать новый контакт в списке ваших контактов</string>
+    <string name="invitationIgnored">Приглашение проигнорировано, ключ:&#160;</string>
+    <string name="inviteWarning1">1. За отправку приглашения ваш мобильный оператор снимет с баланса вашего телефона плату как за обычное сообщение</string>
+    <string name="inviteWarning2">2. Получатель приглашения должен установить на своем телефоне программу Dark SMS. Ссылка для установки Dark SMS будет отправлено вместе с приглашением</string>
+    <string name="neverShowWarning">Больше не показывать</string>
+    <string name="inviteWarningTitle">Внимание!</string>
+    <string name="confirmInvitationTitle">Подтвердить приглашение</string>
+    <string name="invitationMessageText">Это приглашение к использованию Dark SMS, Android приложения для обмена шифрованными СМС, для принятия приглашения вам необходимо установить Dark SMS</string>
+    <string name="psmMarketUrl">Google Play: http://goo.gl/BVXvk</string>
+    <string name="invitationCorrupted">Приглашение повреждено! Пожалуйста обновите приложение или попросите переслать его заново!</string>
+    <string name="receivedAcceptFromUnknownContact">Получено приглашение от неизвестного контакта:&#160;</string>
+    <string name="alreadyInvited">Уже приглашен</string>
+    <string name="inviteAgain">Пригласить еще раз?</string>
+
+    <!-- ConversationCursorRowAdapter -->
+    <string name="invitationAcceptMessageBox">Ваше приглашение принято, теперь вы можете отправлять секретные СМС для:&#160;</string>
+    <string name="mmsDownload">Загрузить ММС</string>
+
+    <!-- ConversationsCursorRowAdapter -->
+    <string name="cipherMessage">[Секретное сообщение]</string>
+    <string name="protectedMessage">[Защищенное сообщение]</string>
+    <string name="invitationMessage">[Приглашение]</string>
+    <string name="inviteAcceptMessage">[Подтверждение приглашения]</string>
+    <string name="lemonMessage">[Фальшивое сообщение]</string>
+    <string name="plainMessage">[Обычный текст]</string>
+
+    <!-- Protocol -->
+    <string name="invitationTo">Приглашение для:&#160;</string>
+
+    <!-- MessageBox -->
+    <string name="error">Критическая ошибка\n</string>
+
+    <!-- BuyerActivity -->
+    <string name="inAppUnavailable">Сервис биллинга недоступен, пожалуйста обновите Android Market/Play до версии >= 3.9.16</string>
+    <string name="problemInAppSetting">Проблема при загрузке сервиса биллинга:&#160;</string>
+    <string name="thanxRefill">Спасибо за пополнение баланса секретных СМС!</string>
+    <string name="thanxMonthlySubscription">Спасибо за месячную подписку!</string>
+    <string name="thanxAnnualSubscription">Спасибо за годовую подписку!</string>
+    <string name="thanxPremium">Спасибо за обновление до пакета "премиум"!</string>
+    <string name="thanxComfortPin">Спасибо за покупку комфортного ввода PIN кода!</string>
+    <string name="thanxHiddenConversation">Спасибо за покупку опции скрытых бесед!</string>
+    <string name="payloadIncorrect">Хорошая попытка взлома покупки, но, увы безуспешная!</string>
+    <string name="purchaseCheatDetected">Попытка ложной покупки, неплохо, но, увы безуспешно!</string>
+    <string name="errorConsuming">Ошибка при пополнении баланса! Код ошибки:&#160;</string>
+    <string name="tankBalance">Ваш баланс секретных СМС:&#160;</string>
+    <string name="pursePremium">У вас есть премиум пакет: вы можете отправлять неограниченное количество секретных СМС!</string>
+    <string name="purseMonthly">У вас есть месячная подписка на рассылку неограниченного количества секретных СМС</string>
+    <string name="purseAnnual">У вас есть годовая подписка на рассылку неограниченного количества секретных СМС</string>
+    <string name="buySKU">Купить</string>
+    <string name="buy10messages">Купить 10 секретных сообщений</string>
+    <string name="buy50messages">Купить 50+10 секретных сообщений</string>
+    <string name="buy100messages">Купить 100+50 секретных сообщений</string>
+    <string name="buyPremium">Купить премиум пакет</string>
+    <string name="buyComfortPin">Купить комфортный ввод PIN кода</string>
+    <string name="buyHiddenConversation">Купить опцию скрытия переписки</string>
+    <string name="psm_store">Магазин</string>
+    <string name="billing_not_supported_title">Биллинг не поддерживается</string>
+    <string name="billing_not_supported_message">Служба биллинга Google не работает в данный момент. Вы можете продолжать работу с приложением, но вы не сможете совершать покупки.</string>
+    <string name="cannot_connect_title">Невозможно связаться с Google Play</string>
+    <string name="cannot_connect_message">Приложение не может связаться с Google Play. Вы можете продолжать работу с приложением, но вы не сможете совершать покупки.</string>
+    <string name="restoring_transactions">Восстановление транзакций</string>
+    <string name="learn_more">Узнать больше</string>
+    <string name="help_url" formatted="false">http://market.android.com/support/bin/answer.py?answer=1050566&amp;hl=%lang%&amp;dl=%region%</string>
+    <string name="buy">Купить</string>
+    <string name="select_item">Выбрать продукт</string>
+
+    <string name="tensms">10 секретных СМС</string>
+    <string name="fivtysms">50 секретных СМС</string>
+    <string name="hundredsms">100 секретных СМС</string>
+    <string name="premium">Неограниченное число секретных СМС</string>
+
+    <!-- settings  -->
+    <string name="settings">Опции</string>
+    <string name="publicKeyFingerPrintBasic">Отпечаток публичного ключа</string>
+    <string name="publicKeyFingerPrintMedium"></string>
+    <string name="publicKeyFingerPrintHigh"></string>
+    <string name="pinShouldBeEntered">PIN код должен быть введен во всех полях</string>
+    <string name="pinsAreNotInentical">PIN коды не совпадают</string>
+    <string name="incorrectPin">Неверный PIN код</string>
+    <string name="enterPin">Введите PIN код</string>
+    <string name="setPin">Установите PIN код</string>
+    <string name="oldPin">Введите старый PIN код</string>
+    <string name="newPin">Введите новый PIN код</string>
+    <string name="confirmPin">Подтвердите PIN код</string>
+    <string name="secureByPin">Защитить PIN кодом</string>
+    <string name="askPinToRead">Спрашивать PIN код перед чтением шифрованных сообщений</string>
+    <string name="comfortPIN">Комфортный ввод PIN кода</string>
+    <string name="askPinOnceScreenUnlocked">Спрашивать PIN код один раз на сессию</string>
+    <string name="messageRingtone">Звук уведомления</string>
+    <string name="notApplicable">Не применимо</string>
+    <string name="cryptoWarning">Использование данной опции запрещено национальным законодательством и международной конвенцией Wassenaar: www.wassenaar.org</string>
+    <string name="pinExists">PIN код уже существует</string>
+    <string name="pinChange">Вы хотите изменить новый PIN код или использовать старый?</string>
+    <string name="change">Изменить</string>
+    <string name="useOld">Старый</string>
+    <string name="reset">Сброс приложения</string>
+    <string name="pressToReset">Нажмите для сброса приложения</string>
+    <string name="resetWarning">ВНИМАНИЕ!\nСброс приложения приведет:\n1. Снятию защиты со всех защищенных сообщений;\n2. Дешифровке всех секретных сообщений;\n3. Удалению всех ключей полученных от всех контактов;\n4. Генерации нового приватного ключа устройства;\n5. Удалению заданного пользователем PIN кода.\n\nОбычно, сброс приложения рекомендуется только перед удалением приложения. Результаты сброса приложения отменить невозможно\n\nВы действительно все еще хотите продолжить!?</string>
+    <string name="resetError">Произошли ошибки, не со всех сообщений снята защита или не все сообщения расшифрованы</string>
+
+    <!-- Context menu  -->
+    <string name="context_menu_settings">Опции</string>
+    <string name="context_menu_logout">Выход</string>
+    <!-- rate app-->
+    <string name="couldnt_launch_market">Невозможно запустить приложение Android Market/Play</string>
+    <string name="rateApp">Оценить приложение</string>
+    <string name="pressToRate">Нажмите для оценки в Google Play</string>
+    <string name="would_you_rate_app">Не хотите оценить приложение?</string>
+    <string name="dontaskanymore">Больше не спрашивать</string>
+    <string name="later">Позже</string>
+    <!-- sms sender -->
+    <string name="send">Отправить</string>
+    <string name="add">Добавить</string>
+    <string name="sendSMS">Отправить СМС</string>
+    <string name="enterRecipient">Введите получателя</string>
+    <string name="enterMessage">Введите сообщение</string>
+    <!-- End User License Agreement -->
+    <string name="eula_title">Лицензия</string>
+    <string name="eula_accept">Принять</string>
+    <string name="eula_refuse">Отказаться</string>
+    <string name="eula_asset">eula.txt</string>
+    <string name="pressToReadEULA">Нажмите чтобы прочитать лицензию</string>
+    <string name="pay_title">Платеж</string>
+    <!-- SMS sending errors -->
+    <string name="smsSent">Сообщение отправлено</string>
+    <string name="smsDelivered">Сообщение доставлено</string>
+    <string name="smsCanceled">Сообщение отменено</string>
+    <string name="smsGenericFailure">Невозможно отправить сообщение: общий сбой</string>
+    <string name="smsNoService">Невозможно отправить сообщение: нет услуги</string>
+    <string name="smsNullPDU">Невозможно отправить сообщение: пустой PDU</string>
+    <string name="smsRadioOff">Невозможно отправить сообщение: нет радиосигнала</string>
+    <string name="smsUnknowError">Невозможно отправить сообщение: неизвестная ошибка</string>
+
+    <!-- privacy level -->
+    <string name="protectionPrivacyLevelTitle">Уровень защиты</string>
+    <string name="messagingPrivacyLevelTitle">Уровень секретности сообщений</string>
+    <string-array name="privacyLevelEntries">
+        <item>Базовый (56 бит)</item>
+        <item>Средний (256 бит)</item>
+        <item>Высокий (320 бит)</item>
+    </string-array>
+    <string-array name="privacyLevelValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="keyExchangeProtocolEntries">
+        <item>Пустой (тест)</item>
+        <item>Диффи-Хеллман 512 бит</item>
+        <item>Эллиптическая кривая 112 бит</item>
+        <item>Эллиптическая кривая 256 бит</item>
+        <item>Эллиптическая кривая 384 бит</item>
+    </string-array>
+
+    <!--debug/free related-->
+    <string name="acraToastText">Отправка email разработчикам о проблемах с программой</string>
+    <string name="itsFree">Это бесплатная версия, не требуется ничего покупать!</string>
+
+</resources>
+

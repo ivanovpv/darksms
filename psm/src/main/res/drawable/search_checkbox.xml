@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $ Gorets
+  ~   $Rev: 260 $ 13.09.2012
+  ~   $LastChangedDate: 2013-07-01 18:13:28 +0400 (Пн, 01 июл 2013) $
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/cancel"/>
+    <item android:state_checked="false" android:drawable="@drawable/search" />
+</selector>

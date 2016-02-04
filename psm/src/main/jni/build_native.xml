@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com), Egor Sarnavsky (egoretss@gmail.com) and Oleksandr Lashchenko (gsorron@gmail.com)2012-2013. All Rights Reserved.
+  ~    $Author: jim_bo $
+  ~    $Rev: 450 $
+  ~    $LastChangedDate: 2013-12-10 11:16:32 +0400 (Вт, 10 дек 2013) $
+  ~    $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/jni/build_native.xml $
+  -->
+
+<project name="psm_jni">
+	<property file="ndk.properties"/>
+	<target name="buildJni">
+		<exec executable="${ndk.dir}/${ndk.build}" failonerror="true"/>
+	</target>
+	<target name="cleanJni">
+		<exec executable="${ndk.dir}/${ndk.build}" failonerror="true">
+            <arg value="APP_ABI=all"/>
+			<arg value="clean"/>
+		</exec>
+	</target>
+</project>

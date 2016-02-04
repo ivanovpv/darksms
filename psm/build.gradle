@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply from: '../artifacts.gradle'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    defaultConfig {
+        applicationId "ru.ivanovpv.gorets.psm"
+        minSdkVersion 11
+        targetSdkVersion 22
+
+        testApplicationId "ru.ivanovpv.gorets.psm.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            aidl.srcDirs=['src/main/aidl']
+            assets.srcDirs = ['src/main/assets']
+            jni.srcDirs=[]
+            //jni.srcDirs=['src/main/jni']
+            //jniLibs.srcDirs=['src/main/libs/x86', 'src/main/libs/armeabi'] //native *.so to include
+            jniLibs.srcDir 'src/main/libs/'
+        }
+    }
+
+    defaultConfig {
+        versionName = "1.0.656"
+        versionCode = 10000000 + 656 * 10
+        minSdkVersion 8
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        debug {
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
+
+apt {
+    arguments {
+        //suitable only for 1 (default) flavour
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName "ru.ivanovpv.gorets.psm"
+    }
+}
+
+
+dependencies {
+    //compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:support-annotations:22.2.0'
+
+    apt "org.androidannotations:androidannotations:3.3.1"
+    compile "org.androidannotations:androidannotations-api:3.3.1"
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(':actionbarsherlock')
+    compile project(':actionbarsherlocki18n')
+
+    compile 'com.google.code.gson:gson:2.4'
+    compile('ch.acra:acra:4.5.0') { //acra
+        exclude group: 'org.json' //to avoid clash conflict with Gradle
+    }
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.1.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+
+
+}
+
+ant.importBuild 'src/main/jni/build_native.xml'
+

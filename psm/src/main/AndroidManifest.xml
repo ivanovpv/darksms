@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 500 $
+  ~   $LastChangedDate: 2014-03-25 16:24:20 +0400 (Вт, 25 мар 2014) $
+  ~   $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/AndroidManifest.xml $
+-->
+<!--
+ Version number encoding: XXYYZZZB
+    XX 2 digits - major version
+    YY 2 digits - minor version
+    ZZZ 3 digits - build (SVN revision)
+    B 1 digit - build variation
+    Example: 01234561 is version 1.23.456a
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.ivanovpv.gorets.psm"
+    android:versionCode="96040"
+    android:versionName="0.9.604" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <!-- need for SMS'ing and calling -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+    <!-- SMS handling permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <!-- MMS handling permissions -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Contacts handling permissions -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- Necessary to set private key -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Necessary to make calls -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- necessary for uninstall interceptor and back button interceptor -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+    in production exclude these two permissions>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/
+    -->
+
+    <application
+        android:name=".Me_"
+        android:icon="@drawable/psm"
+        android:label="@string/psm"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name=".PSMActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/psm"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+
+            <!--
+                android:noHistory="true"
+                android:excludeFromRecents="false"
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SMSActivity_"
+            android:label="@string/psm" >
+            <intent-filter> <!-- Sends sms for someone -->
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConversationActivity_"
+            android:label="@string/conversation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneContactActivity_"
+            android:label="@string/contact" />
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/settings" />
+        <activity
+            android:name=".KeysInfoActivity"
+            android:label="@string/respondentKeys" />
+        <activity
+            android:name=".MessageDetailsActivity_"
+            android:label="@string/messageDetails" />
+        <activity
+            android:name=".MessageBoxActivity"
+            android:label="@string/psm"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- combined SMS/MMS content provider - only query no insert/update/delete -->
+        <provider
+            android:name=".db.MessagesContentProvider"
+            android:authorities="ru.ivanovpv.gorets.psm.provider"
+            android:exported="false" >
+        </provider>
+
+        <!-- SMS receiver -->
+        <receiver
+            android:name=".SmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" > <!-- 999 is highest system priority, so it's hack 2147483647 -->
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" /> <!-- pre kitkat action -->
+                <action android:name="android.provider.Telephony.SMS_DELIVER" /> <!-- kitkat action -->
+            </intent-filter>
+        </receiver>
+
+        <!-- MMS receiver -->
+        <receiver
+            android:name=".MmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_WAP_PUSH" >
+            <intent-filter android:priority="2147483647" > <!-- 999 is highest system priority, so it's hack 2147483647 -->
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" /> <!-- pre kitkat action -->
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" /> <!-- kitkat action -->
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+
+        <!-- MMS downloader service -->
+        <service
+            android:name=".mms.MmsUtilsIntentService"
+            android:enabled="true" >
+        </service>
+
+        <!-- Service that delivers messages for "Quick Response" -->
+        <service
+            android:name=".service.HeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+        <!-- SMS sender service -->
+        <service
+            android:name=".service.SmsSendIntentService"
+            android:exported="false" >
+        </service>
+
+        <!-- widget receiver -->
+        <receiver
+            android:name=".widget.WidgetProvider"
+            android:label="@string/psm" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/psm_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.WidgetUpdateService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

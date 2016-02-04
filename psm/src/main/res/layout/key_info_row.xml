@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2012.
+  ~   $Author: Gorets $
+  ~   $Rev: 380 $
+  ~   $LastChangedDate: 2013-10-22 22:30:45 +0400 (Вт, 22 окт 2013) $
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyFingerPrint"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        style="@android:style/TextAppearance">
+    </TextView>
+    <TextView
+        android:id="@+id/keyFingerPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Large">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyType"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        style="@android:style/TextAppearance">
+    </TextView>
+    <TextView
+        android:id="@+id/keyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyReceived"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        style="@android:style/TextAppearance.DeviceDefault">
+    </TextView>
+    <TextView
+        android:id="@+id/keyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium">
+    </TextView>
+
+</LinearLayout>

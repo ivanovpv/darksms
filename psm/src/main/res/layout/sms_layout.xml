@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal" android:baselineAligned="false">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+        <ru.ivanovpv.gorets.psm.controls.FlowLayout
+                android:id="@+id/recipientsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+        </ru.ivanovpv.gorets.psm.controls.FlowLayout>
+
+        <ru.ivanovpv.gorets.psm.controls.InstantAutoCompleteTextView
+                android:id="@+id/recipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enterRecipient" >
+
+            <requestFocus />
+        </ru.ivanovpv.gorets.psm.controls.InstantAutoCompleteTextView>
+
+        <EditText
+                android:id="@+id/smsBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="@string/enterMessage"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="100" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+        <ru.ivanovpv.gorets.psm.view.InviteConversationButton_
+                android:id="@+id/inviteConversationButton"
+                android:background="@drawable/send_invitation"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                />
+        <ImageButton
+                android:id="@+id/sendSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_button_selector"
+                android:gravity="center_horizontal"
+                android:onClick="sendSmsAction" />
+    </LinearLayout>
+
+</LinearLayout>

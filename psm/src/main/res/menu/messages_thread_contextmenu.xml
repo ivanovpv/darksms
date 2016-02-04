@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2013.
+  ~   $Author: ivanovpv $
+  ~   $Rev: 480 $
+  ~   $LastChangedDate: 2014-01-23 15:13:39 +0400 (Чт, 23 янв 2014) $
+  ~   $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/res/menu/messages_thread_contextmenutextmenu.xml $
+
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/viewContact"
+            android:title="@string/viewContact"/>
+    <item
+            android:id="@+id/call"
+            android:title="@string/call"/>
+    <item
+            android:id="@+id/protectThread"
+            android:title="@string/protectThread"/>
+    <item
+            android:id="@+id/unProtectThread"
+            android:title="@string/unProtectThread"/>
+    <item
+            android:id="@+id/deleteThread"
+            android:title="@string/deleteThread"/>
+</menu>

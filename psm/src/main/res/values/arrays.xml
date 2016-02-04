@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Ivanov Pavel (ivanovpv@gmail.com) and Egor Sarnavsky (egoretss@gmail.com) 2013.
+  ~   $Author: ivanovpv $Gorets
+  ~   $Rev: 246 $ 19.06.2013
+  ~   $LastChangedDate: 2013-06-19 10:58:01 +0400 (Ср, 19 июн 2013) $
+  ~   $URL: https://subversion.assembla.com/svn/ivanovpv/trunk/res/values/arrays.xml $
+
+  -->
+<resources>
+    <string-array name="abs_menu">
+        <item>@string/newMessage</item>
+        <item>@string/search</item>
+        <item>@string/psm_store</item>
+        <item>@string/context_menu_settings</item>
+    </string-array>
+</resources>

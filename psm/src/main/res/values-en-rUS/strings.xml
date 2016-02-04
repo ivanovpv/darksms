@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <string name="cryptoWarning">Using of this feature is prohibited by international convention Wassenaar Arrangement and U.S. encryption export control regulations. For more information please visit: www.wassenaar.org (Wassenaar Arrangement) and www.bis.doc.gov (U.S. Bureau of Industry and Security)</string>
+</resources>
