@@ -57,3 +57,10 @@ HOWTOS
 Some part of Dark SMS, namely heavy crypto calculations are written on native C. To build them one has to use Android NDK, all necessary build files (as ANT builds imported into Gradle) are supplied as well as prebuild native libraries (folder `/psm/src/main/libs`). To build those libraries from the scratch do followinf:
    1. Create/edit `psm/src/main/jni/ndk.properties` (example given in file `ndk.properties.canonical`)
    2. Launch either ANT build file `build_native.xml` or Gradle task `buildJni` - it's basically the same task
+
+Cryptography Notice
+-------------------
+
+This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
+BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+See <http://www.wassenaar.org/> for more information.
