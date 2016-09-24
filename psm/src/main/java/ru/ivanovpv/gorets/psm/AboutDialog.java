@@ -12,10 +12,12 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.view.Window;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -90,6 +92,7 @@ public class AboutDialog extends Dialog implements View.OnClickListener
         this.dismiss();
 	}
 
+    @SuppressWarnings("deprecation")
     private void inflateMoreOrLess() {
         TableRow tr=(TableRow)findViewById(R.id.creditsRow);
         TextView tv=(TextView ) findViewById(R.id.more);
@@ -97,9 +100,14 @@ public class AboutDialog extends Dialog implements View.OnClickListener
         if(!isMore)
         {
             WebView webView=new WebView(activity);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.getSettings().setSupportZoom(true);
-            webView.getSettings().setBuiltInZoomControls(true);
+            WebSettings webSettings=webView.getSettings();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+                webSettings.setTextZoom(50);
+            else
+                webSettings.setTextSize(WebSettings.TextSize.SMALLEST);
+            webSettings.setJavaScriptEnabled(false);
+            //webSettings.setSupportZoom(true);
+            webSettings.setBuiltInZoomControls(true);
             webView.setWebViewClient(new WebViewClient());
             webView.loadUrl(activity.getString(R.string.creditsURL));
             tr.addView(webView);

@@ -10,7 +10,7 @@
         />
     <item
         android:drawable="@drawable/ball_unread"
-        android:id="@+id/psmIcon"
+        android:id="@id/psmIcon"
         android:top="30dp"
         android:left="30dp"
         android:right="38dp"

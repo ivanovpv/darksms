@@ -3,6 +3,7 @@ package ru.ivanovpv.gorets.psm;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.Closeable;
@@ -82,7 +83,9 @@ public final class Eula
             }
         });
         builder.setMessage(readEula(context));
-        builder.create().show();
+        AlertDialog dialog=builder.show();
+        TextView textView = (TextView) dialog.findViewById(android.R.id.message);
+        textView.setTextSize(10);
     }
 
     static void show(final Context context)
@@ -98,7 +101,9 @@ public final class Eula
             }
         });
         builder.setMessage(readEula(context));
-        builder.create().show();
+        AlertDialog dialog=builder.show();
+        TextView textView = (TextView) dialog.findViewById(android.R.id.message);
+        textView.setTextSize(10);
     }
 
     private void accept()

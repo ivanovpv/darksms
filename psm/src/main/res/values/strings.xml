@@ -56,9 +56,9 @@
     <string name="versionPSM">Dark SMS v.&#160;</string>
     <string name="descriptionPSM">Secure SMS messenger\n for Android devices</string>
     <string name="copyright">Copyright (c) 2014 Pavel Ivanov, Egor Sarnavsky  &amp; Olexander Laschenko"</string>
-    <string name="emailAuthor">Email: ivanovpv@gmail.com"</string>
+    <string name="emailAuthor">Email: ivanovpv@gmail.com</string>
     <string name="twitterAuthor">Twitter: http://twitter.com/pridurok</string>
-    <string name="support">Support: http://facebook.com/pages/Cellbox/153225434730772</string>
+    <string name="support">Support: ivanovpv@gmail.com</string>
     <string name="credits">Credits</string>
     <string name="creditsURL">file:///android_asset/credits.html</string>
     <string name="moreURL">&lt;a href=\'file:///android_asset/credits.html\'&gt;more...&lt;/a&gt;</string>
@@ -280,21 +280,21 @@
     <string name="acraToastText">Sending email with crash report to developers</string>
     <string name="itsFree">Enjoy free version! You don\'t need to pay!</string>
     <!-- The following are reserved skus defined by Market for testing and not need to be translated. -->
-    <string name="android_test_canceled">android.test.canceled</string>
-    <string name="android_test_purchased">android.test.purchased</string>
-    <string name="android_test_item_unavailable">android.test.item unavailable</string>
-    <string name="android_test_refunded">android.test.refunded</string>
-    <string name="edit_buy_simulate">Edit Buy Simulate</string>
-    <string name="edit_buy_simulate_title">Edit the developer buy simulate associated with this purchase</string>
-    <string name="edit_buy_simulate_accept">Set simulation</string>
-    <string name="edit_buy_simulate_clear">No simulation</string>
-    <string name="items_for_sale">Items for sale</string>
-    <string name="items_you_own">Items you own</string>
+    <string name="android_test_canceled" translatable="false">android.test.canceled</string>
+    <string name="android_test_purchased" translatable="false">android.test.purchased</string>
+    <string name="android_test_item_unavailable" translatable="false">android.test.item unavailable</string>
+    <string name="android_test_refunded" translatable="false">android.test.refunded</string>
+    <string name="edit_buy_simulate" translatable="false">Edit Buy Simulate</string>
+    <string name="edit_buy_simulate_title" translatable="false">Edit the developer buy simulate associated with this purchase</string>
+    <string name="edit_buy_simulate_accept" translatable="false">Set simulation</string>
+    <string name="edit_buy_simulate_clear" translatable="false">No simulation</string>
+    <string name="items_for_sale" translatable="false">Items for sale</string>
+    <string name="items_you_own" translatable="false">Items you own</string>
     <string name="recent_transactions">Recent activity</string>
 
     <!-- don't touch them!!! Ask ivanovpv@gmail.com -->
     <string name="res01">9EFC9235A99B4311CB85A43E826EAFE4A03115A2CC5A76A636D5A6BBCEC4734E358F2A29E9812CCC232433CB78DDEF9E8F76681BA6DE0A5FBA3914849E4C24D041EB8695EEED5B7E18B2775195A70FFBA80B4DD9DA87242F9FBF8692CEE875F3D8304BC4997B0A974292A4B2F9AE797A36AA2853C2F755A3CE117B33FB1F92DF04C0CCD5C056384083692CC6B8760AB71FE498D1E48A1A2D1F8B1966C9C77E8276D2BD1120FCF8F13A4EF223AA5B41BA922A4ECDBD555CBC24DDE488A4D03E321F823C239D813D8E04AD8E6202A42AE01D88B27FEB34B231E2440EC0A5475ABD0FD6DCACFBA8616E2EC11E7F9FDA67CD70BDE793C099D4621A68310611839452DD5279C881475A8923C5D4FEE68432343DC23C7EDCD567B7988F214ED13A8F3D6EC87FE972CD14AC9A041BEEF57560D64AEFCBA3EAE00D130C927223CEE620CFEC0B61E804F9143DC306267BA467489AAF0238BAA53723EB61B5D1A0BBBA4D4A27BC2F6ACFD970E09EF25C98CA37DF2595E1629146BDD732B84016E6B05457F0729988B7A1B53B0876DA7132F4D360E2515B2FB189827F023E6E23ABD980BEEF8D6925D1DD0B51A0498094E9EA881E290EBA5F1AF4D360E2</string>
     <string name="res02">B5ABD7FFC7C68A4480EA9A8F6F090DD069BD971B58A25CC344DED530E0849538A7447D3FE3774C6621E09BC1CC49E7A2958CA1B49BD791212EEAC84A06F40BCF44DED530E0849538A7447D3FE3774C66</string>
-    <string name="mas01">v5hm43mihd2qrchakab46oehahgslle91oju3msj2831usknr30</string>
+    <string name="mas01" translatable="false">v5hm43mihd2qrchakab46oehahgslle91oju3msj2831usknr30</string>
 </resources>
 
